@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Problem Statement</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron.css" rel="stylesheet">
+      
+    <!-- Font Awesome Icons -->
+   
+      <link rel="stylesheet" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css">
+      
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+<!-- navbar is absolute shit when collapsed to mobile dimensions... -->
+      
+   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+<!--
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+-->
+          <a class="navbar-brand" href="index.html">Andrew Pagels</a> <!-- Cannot figure out how to center this href vertically on navbar. -->
+
+<!--        </div>  this one causes navbar row stacking on mobile... -->
+          
+        <div class="navbar-header"> <!-- I changed "navbar-header" to "navbar-right" and the icons below were positioned on the right -->
+<!--
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+-->
+            
+            <!-- <i class="icon-large icon-search"></i> seems to link to this page (http://marcoceppi.github.io/bootstrap-glyphicons/) , which has more options for icons. -->
+         
+<!-- Social links. Images courtesy of fontawesome.io -->
+    <ul class="list-inline">
+       
+<!-- Blog -->
+        
+        <li>
+            <a href="https://medium.com/@andrewpagels" target="_blank">
+          <i class="navbar-brand fa fa-wordpress fa-fw fa-2x"></i> <!-- "fa-fw fa-2x" scales FB icon up 2x -->
+            </a>
+        </li>        
+
+<!-- Twitter -->
+        
+        <li>
+            <a href="https://twitter.com/drewgels" target="_blank">
+          <i class="navbar-brand fa fa-twitter fa-fw fa-2x"></i> <!-- "fa-fw fa-2x" scales FB icon up 2x -->
+            </a>
+        </li>
+        
+<!-- Facebook -->        
+
+        <li>
+            <a href="https://www.facebook.com/andrew.pagels" target="_blank">
+          <i class="navbar-brand fa fa-facebook fa-fw fa-2x"></i> <!-- "fa-fw fa-2x" scales FB icon up 2x -->
+            </a>
+        </li>
+    
+<!-- Linkedin --> 
+        
+        <li>
+            <a href="https://www.linkedin.com/in/andrewpagels" target="_blank">
+          <i class="navbar-brand fa fa-linkedin fa-fw fa-2x"></i> <!-- "fa-fw fa-2x" scales FB icon up 2x -->
+            </a>
+        </li>
+        
+<!-- Mail me! --> 
+        
+        <li>
+            <a href="mailto:andrew.pagels@gmail.com" target="_blank">
+          <i class="navbar-brand fa fa-envelope fa-fw fa-2x"></i> <!-- "fa-fw fa-2x" scales FB icon up 2x -->
+            </a>
+        </li>
+        
+    </ul> 
+            <!--  <span class="navbar-brand glyphicon glyphicon-music"></span> icon was showing up directly under "Andrew Pagels", but then I added "navbar-brand" class in front of glyphicon and it showed up directly to the right of "Andrew Pagels". -->
+
+        </div>
+          
+        <div id="navbar" class="navbar-collapse collapse">
+            
+            <!-- Below is code for a user-fillable form -->
+            
+        <!--  <form class="navbar-form navbar-right" role="form">
+            <div class="form-group"> -->
+                
+             <!-- <input type="text" placeholder="Email" class="form-control"> -->
+                
+         <!--   </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+        </div> --> <!--/.navbar-collapse -->
+      </div>
+            
+        <div id="cb-read-progress" class="cb-ani-fade-in-1s"><div class="cb-text"><span id="cb-read-progress-percent">0%</span> Read</div><progress max="100" value="0" id="cb-progress-bar"><div class="progress-bar"><span style="width: 80%;">Progress: 80%</span></div>
+            
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>This Problem is an Opportunity</h1>
+        <p style="margin-bottom: 25px">________________________________</p>
+          
+        <p>“I would like to find <b>a better way to connect healthcare stakeholders</b> by <b>creating powerful tools for healthcare</b> and <b>put them in the hands of regular people</b> because I believe that healthcare should be <b>accessible, affordable, and usable by anyone, anywhere</b>." </p>
+          
+        <p class = "col-md-8"><a class="btn btn-primary btn-lg" href="#problem" role="button"> Problem Statement: What I Expected &raquo;</a></p>
+          
+        <p class = "col-md-4"><a class="btn btn-primary btn-lg" href="#reflection" role="button"> Reflection: What I Learned &raquo;</a></p>
+          
+    </div>
+    
+      </div>
+          
+
+<!-- "section id" sets up to be referenced by other buttons. -->
+
+    <div class="container">
+ <!-- START THE FEATURETTES -->
+<section id="problem" class="problem">   
+    
+    <div class="container">
+        
+     <section id="mgt-innov" class="mgt-innov">     
+
+      <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Problem Statement: <span class="text-muted">What did I expect?</span></h2>
+          <p class="lead">It is a rare circumstance, to have the freedom to pursue what one is most passionate about. As a student, I have the unique ability to be agile in my pursuits, and to pick out from the all-you-can-eat buffet that is the scope of opportunities around me. In this environment, I have the chance to intentionally choose to engage in a cohesive but amazingly diverse array of activities to explore my passions and imbue myself with a distinct set of skills that will help me effect real change in the area I choose. </p>
+            
+<p class="lead">Even rarer is the chance to combine more than one passion into one project or set of activities. I have had this exact chance, being involved in several medical device design and business competitions - Tech Titans, the Utah Entrepreneur Challenge, and Bench to Bedside. In these competitions, I have found two of my worlds colliding: my love for science and aspirations in medicine, and my love for business, and the process of invention.  </p>
+
+<p class="lead">Working with the multi-disciplinary teams of which I am a part has also revealed something to me that I have now become deeply interested in: how teamwork and collaboration can provide a framework of support and enrichment of potential, through which the diverse abilities of a team can be utilized to accomplish much more than each member would accomplish alone. </p>
+
+<p class="lead">My involvement in these teams has elucidated something a little more problematic about the process of making changes in the health care system. It is very difficult to create and develop ideas into something that is viable and has real staying power, and not enough ideas make it to the point where they can see application or really improve the lives of the community. </p>
+
+<p class="lead">In my brief, but telling experience, I’ve discovered that this is a multi-faceted, very complex problem, which I believe stems from several phenomena. Firstly, there is an alarming disconnection between the inventors of products and the end-users (in healthcare, healthcare providers and patients). This may lead to a great deal of “hopeful” innovation, or creation of solutions without problems, as well as unrealistic design of products (with no feedback from the people who will use them). Secondly, there is a lack of collaboration between people who have answers to common questions and strategies or resources (financial, intellectual, or social) for new inventors. This leads to a lot of wasted time and energy on the part of inventors, trying to navigate the intricate and often convoluted space of commercialization. </p>
+            
+<p class="lead">Lastly, I believe there needs to be much more involvement and integration of people from different stakeholders in health care (legal, clinicians, businesspeople, insurance providers, patients, economists, and engineers). This may provide the kind of critical mass of ideas that could begin to cause real changes in the way we deliver healthcare. Often the most profound insights come from collaboration between people with very different perspectives. </p>
+
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="eCollar iterations" src="img/2013%20eCollar%20prototype%20iterations.JPG" data-holder-rendered="true" style="width: 500px; height: 375px;">
+            
+          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Management of Innovation" src="img/Health%20Economics.jpg" data-holder-rendered="true" style="width: 500px; height: 375px;">
+            
+        </div>
+          
+       </div>
+        </section>
+        
+   <section id="reflection" class="reflection">     
+ 
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Ski suit" src="img/2009%20spring%20Andrew%20ski%20suit.jpg" data-holder-rendered="true" style="width: 375px; height: 500px;">
+            
+            
+        </div>
+        <div class="col-md-7">
+            
+        <h2 class="featurette-heading">Reflection: <span class="text-muted">What did I learn?</span></h2>
+        
+        <hr class="featurette-divider">
+
+        <h2 class="featurette-heading">Context <span class="text-muted">matters</span></h2>
+            
+            <p class="lead">It happens all the time. People are always giving you advice. Without the proper context, even the most sage words can seem platitudinous, even banal. </p>
+            
+            <p class="lead">More times than I care to admit, I’ve been bequeathed indispensable advice that was meaningless, because I didn’t have the experience to be receptive to it. In the last few years, I’ve reflected and realized that the import of the same exact advice can be drastically different given different circumstances. </p>
+            
+            <p class="lead">One of these pieces of advice came from one of my mentors in early 2012. Only now, 3 more years down the conveyor belt, I have finally come to understand how profound the advice truly was. </p>
+            
+            <h2 class="featurette-heading">Try the shirt on <span class="text-muted">for a day</span></h2>
+            
+            <p class="lead">To set the stage, it was 2012. I was trying to rigorously define what I was passionate about, and I was stymied. As I waffled and dithered about what I wanted to do with my life, my mentor reminded me that nobody can actually predict THE THING they want to do in life. Rather, it’s more useful to commit to trying something for a while, reflecting on what you did or did not like about it, then recalibrating. She called it “trying on a shirt for a day”. As you can see below, I had a lot of shirts to try on:  </p>
+
+            <p class="lead">One of these pieces of advice came from one of my mentors in early 2012. Only now, 3 more years down the conveyor belt, I have finally come to understand how profound the advice truly was. </p>
+            
+            <p class="lead">Problems I noticed: </p>
+            
+            <ol>
+                <li>Minorities in Utah do not have equal access to health care due to language/cultural barriers. </li>
+                <li>Vaccine technology (delivery and mechanism) is outdated and difficult to access, which negates some of the intended benefits of vaccination. </li>
+                <li>Service (in which I’ve been involved) does not have wide scope or long-lasting effect. Benefit ends when direct involvement does. </li>
+                <li>There is no efficient/low-cost way to purify water from snow. </li>
+                <li>People in developing countries do not have access to quality health care/health care products. </li>
+                <li>People in developing countries do not have the resources or the process in place (support) to be able to innovate within their own spaces. They have no avenue by which they can explore novel ideas they have, or bring them to fruition. </li>
+                <li>There is a large disparity in opportunities, education, and health care in our community based on socioeconomic status. </li>
+                <li>There is a disturbing lack of communication between clinicians/researchers/industry/customers professionals and students (especially those students working to create products for them). </li>
+                <li>There is a lack of collaboration between colleges and universities. </li>
+                <li>Student innovators have questions and insecurities about how to develop products, and no forum for peer assistance. </li>
+                <li>Technology in obstetrics has been stagnant for decades. The standard of care hasn’t changed, due to a lack of innovation. </li>
+                <li>I have no compelling opportunity that would combine my passions of health science, service, soft skill development and innovation. </li>
+            </ol>
+            
+            <p class="lead">Yikes. Where to even start? </p>
+          
+        <h2 class="featurette-heading">What you learn <span class="text-muted">by doing</span></h2>
+            
+            <p class="lead">Well, it turned out the place to start… is with starting. I agonized over which problem to choose, but it is impossible to ascertain ex-ante which of these I’d find most compelling.  </p>
+            
+            <p class="lead">I continued to ponder this, and realized that I could pinpoint instantaneous points in my life in which a small amount of exposure to something had radically changed my perception.  It was this way when, after a year of being disillusioned with my life as a business major, my brother mentioned that we should look into bioengineering. </p>
+            
+            <p class="lead">“Bioengineering?”  I replied.  “What does that even mean?”  This was what I have termed a “catalytic event”; a simple suggestion changed the entire focus of my studies, and thus, my life. </p>
+            
+            <p class="lead"><b>Action catalyzes growth.</b> </p>
+            
+            <p class="lead">I took action. I knew I was interested in healthcare, and that was a good enough place to start. I had been through a few device development competitions. I learned the value of collaboration between people from different backgrounds from a team I worked with composed of two engineers, a medical student, and a serial entrepreneur. </p>
+            
+            <p class="lead">Combining our backgrounds yielded a new device, <a href="http://andrewpagels.me/projects.html#cervigauge" target="_blank">CerviGauge</a>, that could monitor peri-partum cervical dilation without the need for several manual measurements by the obstetrician. It was another catalytic event; I got my first taste of trying to bring a idea to fruition. However, the team quickly dissolved after not receiving funding through Bench to Bedside. In light of this and the daunting path required to get any medical device to market, the project withered. </p>
+            
+            <p class="lead">The interesting thing was, I talked with a huge number of other student teams involved in Bench to Bedside and heard similar stories. They had all prepared for the competition for an entire year. While they had learned a great deal — as I had — both funded and non-funded teams saw their projects dry up after the competition. Each person cited challenges of team-building, product-building, company-building, lack of funding, et cetera. It was disheartening, to say the least: here was a competition designed to empower students to create medical technologies, and many of them left feeling more jaded about the process than when they had entered. I sensed a problem. </p>
+            
+            <p class="lead">I decided to set out to learn exactly why innovation in healthcare is so hard. Why was it so hard to get funding for a new idea? How do you build a team? How do you actually start a company? How do you protect your idea? And most importantly, why was there such a gap between concept and commercialization? </p>
+            
+            <p class="lead">I was right: it can be hard, but just not for the reasons I thought at the time. </p>
+       
+        <h2 class="featurette-heading">Enter <span class="text-muted">the crucible</span></h2>
+       
+            <p class="lead">I took <a href="http://andrewpagels.me/courses.html" target="_blank">classes in healthcare economics, management of innovation, and design of medical devices</a>, but it became clear that understanding why innovation was so hard for students was not something I could do from the outside. </p>
+       
+            <p class="lead">So when the opportunity to start my own business arose, I took it as an opportunity to treat myself as the exemplar “student trying to innovate”, and hopefully catalyze my deciphering of the mysterious “commercialization” process. Little did I know at the time, this path would lead to a completely different, albeit related problem about healthcare. </p>
+       
+            <p class="lead">I signed on to a new venture (see <a href="http://andrewpagels.me/projects.html#itest" target="_blank">my reflection on my time working on iTest</a>), gushing with optimism, unaware of how fitting the “crucible” metaphor was. I would emerge an entirely different person. </p>
+       
+        <h2 class="featurette-heading">Stop trying to <span class="text-muted">"start a company"</span></h2>
+       
+            <p class="lead">Fast forward two years. On the surface, we had been successful; we had done all of the things that you’re “supposed” to do when you’re starting a company. We had filed patents. We had hired engineers. We recruited a top sales and marketing executive from a local company. We were talking to investors. We were writing grants. We were doing all of the things that we had been counseled to do by well-meaning people. </p>
+       
+            <p class="lead">But under the surface, I was disillusioned. I felt that we had lost our vision, and now were scrambling from short-term opportunity to short-term opportunity. Each week, it seemed, we were chasing a new partnership, or potential investment. The result was, we were unfocused, and spending a lot of money going in a lot of different directions. </p>
+       
+            <p class="lead">What was wrong? </p>
+       
+            <p class="lead">One reason innovation is viewed as being so hard is that <b>nobody really knows how to do it</b>. The result is that, like us, you see a lot of companies parroting other companies, engaged in activities that they’ve heard or seen. The logic is, “startups do X (file patents, set up an LLC, seek investment, et cetera), therefore we need to do X.” Even more susceptible to this logic are people who haven’t started companies before (read: students). </p>
+       
+            <p class="lead">What is the solution to this problem? </p>
+       
+            <p class="lead"><b>We need to stop the telling people to “start businesses”</b>. It is a loaded phrase which prescribes a preordained set of activities that may or may not be helpful to a fledgling entrepreneur. </p>
+       
+            <p class="lead">The question of “how to start a company” is, surprisingly, almost the same question as “how can I differentiate myself?”, “how can I become a successful artist?”, or even “how can I get promoted?” And the answers to these questions leads right back to my original problem statement. </p>
+       
+        <h2 class="featurette-heading">What is your <span class="text-muted">theory of value?</span></h2>
+       
+            <p class="lead">The answer, as brilliantly articulated in <a href="https://hbr.org/2013/06/what-is-the-theory-of-your-firm" target="_blank">this article by Todd Zenger</a>, is that <b>entrepreneurs, above all, need to learn how to recognize and create value</b>. Then, use that theory of value to guide all of your decisions. </p>
+       
+            <p class="lead">We were spread much too thin, but this is the opposite of what most successful companies do. Companies like Apple, Google, and Uber started off with an incredibly narrow scope of activities, and strive to the be the best at one thing. For example, Apple 2014 controls every level of design, production, sales, content, and backend support for their products. However, Apple began merely by hand-crafting and selling computer motherboards. They retain their theory of value even today, and it guides all of their strategic decisions, ESPECIALLY what activities not to do. This is famously epitomized by Steve Jobs when he returned to Apple in 1997. Apple had become bloated, so he <a href="http://allaboutstevejobs.com/bio/longbio/longbio_08.php" target="_blank">literally called every product manager into a room and had them convince him that their product line should continue. </a><b>He ended up cutting the number of product from 350 to 10</b>. In doing so, he radically shifted Apple’s focus back to “how can we create value for our customers?” </p>
+       
+            <p class="lead">Coupling this insight with <a href="http://andrewpagels.me/courses.html#pep" target="_blank">my stint designing a new patient experience for the Clinical Neurosciences Center</a>, I learned that you must identify exactly what would be valuable to your intended customer, and retain a narrow focus on this. This accomplishes two important things: </p>
+       
+       <ol>
+                <li><b>It gives you the criteria by which to measure your performance, execution, and new opportunities</b>, so that you can say no to seemingly good opportunities that are actually distractions.  </li>
+                <li><b>It forces you to understand the ecosystem you’re working in</b>. It gives you insight on which “experts” or stakeholders you should listen to, and which you shouldn’t. Which is important, because as I mentioned above, EVERYONE has advice for you. </li>
+                
+            </ol>
+       
+        <h2 class="featurette-heading">Now what? <span class="text-muted">Do things on purpose</span></h2>
+       
+            <p class="lead">Six incredible years of catalytic events at the University of Utah has led me to a much more specific problem: I want to create powerful tools for healthcare and put them in the hands of regular people because I believe that healthcare should be accessible, affordable, and usable by anyone, anywhere. </p>
+       
+       <p class="lead">Buried in this lofty goal is my understanding of how I can best add value to the healthcare system. I now have a purpose solidified by a foundation of amazing people, empowering courses, and life-changing projects outside of school. I know my vector of impact, and I can make decisions based on the criteria of my value, and how much value I can add to other people. </p>
+       
+       <p class="lead">That is my story. At least for now.</p>
+            
+        </div>
+      </div>
+    </section>
+      <hr class="featurette-divider">
+      </div>
+        </section>
+      <!-- /END THE FEATURETTES -->
+</div>
+        
+      <footer>
+        <p style="text-align: center">&copy; Playhouse Records 2014. Built with Bootstrap. Thanks to Xon for expert punditry.</p>  
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

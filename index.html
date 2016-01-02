@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Andrew Pagels</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron.css" rel="stylesheet">
+      
+    <!-- Font Awesome Icons -->
+   
+      <link rel="stylesheet" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css">
+      
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+<!-- navbar is absolute shit when collapsed to mobile dimensions... -->
+      
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+<!--
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+-->
+          <a class="navbar-brand" href="index.html">Andrew Pagels</a> <!-- Cannot figure out how to center this href vertically on navbar. -->
+
+<!--        </div>  this one causes navbar row stacking on mobile... -->
+          
+        <div class="navbar-header"> <!-- I changed "navbar-header" to "navbar-right" and the icons below were positioned on the right -->
+<!--
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+-->
+            
+            <!-- <i class="icon-large icon-search"></i> seems to link to this page (http://marcoceppi.github.io/bootstrap-glyphicons/) , which has more options for icons. -->
+         
+<!-- Social links. Images courtesy of fontawesome.io -->
+    <ul class="list-inline">
+       
+<!-- Blog -->
+        
+        <li>
+            <a href="https://medium.com/@andrewpagels" target="_blank">
+          <i class="navbar-brand fa fa-wordpress fa-fw fa-2x"></i> <!-- "fa-fw fa-2x" scales FB icon up 2x -->
+            </a>
+        </li>        
+
+<!-- Twitter -->
+        
+        <li>
+            <a href="https://twitter.com/drewgels" target="_blank">
+          <i class="navbar-brand fa fa-twitter fa-fw fa-2x"></i> <!-- "fa-fw fa-2x" scales FB icon up 2x -->
+            </a>
+        </li>
+        
+<!-- Facebook -->        
+
+        <li>
+            <a href="https://www.facebook.com/andrew.pagels" target="_blank">
+          <i class="navbar-brand fa fa-facebook fa-fw fa-2x"></i> <!-- "fa-fw fa-2x" scales FB icon up 2x -->
+            </a>
+        </li>
+    
+<!-- Linkedin --> 
+        
+        <li>
+            <a href="https://www.linkedin.com/in/andrewpagels" target="_blank">
+          <i class="navbar-brand fa fa-linkedin fa-fw fa-2x"></i> <!-- "fa-fw fa-2x" scales FB icon up 2x -->
+            </a>
+        </li>
+        
+<!-- Mail me! --> 
+        
+        <li>
+            <a href="mailto:andrew.pagels@gmail.com" target="_blank">
+          <i class="navbar-brand fa fa-envelope fa-fw fa-2x"></i> <!-- "fa-fw fa-2x" scales FB icon up 2x -->
+            </a>
+        </li>
+        
+    </ul> 
+            <!--  <span class="navbar-brand glyphicon glyphicon-music"></span> icon was showing up directly under "Andrew Pagels", but then I added "navbar-brand" class in front of glyphicon and it showed up directly to the right of "Andrew Pagels". -->
+
+        </div>
+          
+        <div id="navbar" class="navbar-collapse collapse">
+            
+            <!-- Below is code for a user-fillable form -->
+            
+        <!--  <form class="navbar-form navbar-right" role="form">
+            <div class="form-group"> -->
+                
+             <!-- <input type="text" placeholder="Email" class="form-control"> -->
+                
+         <!--   </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+        </div> --> <!--/.navbar-collapse -->
+      </div>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Hi, I'm Andrew.</h1>
+          <p>I'm a business student turned biologist turned bioengineer turned wantrepreneur. I love science, envisioning the future of healthcare, and product design, and I live in the space where these three collide. A few years ago, I set out to learn why innovation in healthcare is so difficult. <b>This is my story.</b></p>
+          
+          
+<!-- I set up this button to slide down to the "enter" section with "Missions", "Courses", and "Projects". I couldn't figure out how to make it actually slide, rather than jump down to this section, until I added the jQuery script at the bottom and called class "slide"! Woo! I still can't figure out how to make it stop right at the top of the "enter" container - it stops too low. -->
+          
+        <p><a class="btn btn-primary btn-lg slidedelay" href="#enter" role="button"> Let's get started &raquo;</a></p>
+          
+      </div>
+    </div>
+
+<!-- "section id" sets up to be referenced by other buttons. -->
+        
+      
+<section id="enter" class="enter">   
+    
+    <!-- below sets destination for slide, but this seems sloppy... -->
+                <div class="slide">
+				</div>
+    
+    <div class="container">
+      <!-- Example row of columns -->
+        <div class="row">
+        <div class="col-md-4">
+            
+                      <!-- Sample image inclusion, referenced from internet. ! I can't figure out how to center the image -->
+          
+<img data-src="holder.js/200x200" class="img-thumbnail" alt="266x200" src="img/2011%20summer%20Andrew%20in%20Red%20Butte.JPG" data-holder-rendered="true" style="width: 266px; height: 200px;">
+            
+            
+          <h2>Missions</h2>
+          <p>Many people think they know the reason for the things that they do. I thought I did. Then I tried to articulate this, and found that it was more difficult than I thought.</p>
+          <p><a class="btn btn-attgrab slidedelay" href="#missions" role="button">It all starts with "why" &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            
+            <img data-src="holder.js/320x200" class="img-thumbnail" alt="200x320" src="img/2013%20eCollar%20prototype%20iterations.JPG" data-holder-rendered="true" style="width: 320px; height: 200px;">
+            
+          <h2>Courses</h2>
+          <p>I just graduated from the University of Utah, where I studied biomedical engineering with emphases in biochemical engineering, design, and entrepreneurship. </p>
+          <p><a class="btn btn-attgrab" href="courses.html" role="button">Check out my classes &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+            
+            <img data-src="holder.js/235x200" class="img-thumbnail" alt="235x200" src="img/Strep%20Render.png" data-holder-rendered="true" style="width: 320px; height: 200px;">
+            
+          <h2>Projects</h2>
+          <p>I built things. And started to crack the code on why innovation can be so hard, but also why it's not as hard as you think.</p>
+          <p><a class="btn btn-attgrab" href="projects.html" role="button">See my projects &raquo;</a></p>
+        </div>
+      </div>
+        </section>
+
+ <!-- START THE FEATURETTES -->
+<section id="missions" class="missions">        
+    <div class="container">
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+          
+        <div class="col-md-7">
+            
+                          <!-- below sets destination for slide, but this seems sloppy... -->
+                <div class="slide">
+				</div>
+            
+          <h2 class="featurette-heading">Innovating in healthcare is hard for students, <span class="text-muted">but does it have to be?</span></h2>
+          <p class="lead">By the time I was a sophomore in college, I had tried (and mostly failed) to get two medical devices off the ground. I felt like I was missing something, so I set out to find out why innovation in healthcare is so hard. The process of figuring this out changed everything I thought I knew about healthcare, and what “starting a business” really means. </p>
+            
+                      <p><a class="btn btn-attgrab" href="problem.html" role="button">See the problem I noticed that launched my journey &raquo;</a></p>
+            
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" data-src="holder.js/375x500/auto" alt="Starting my journey" src="img/2013%20Andrew%20in%20the%20Alps.jpg" data-holder-rendered="true"  style="width: 375px; height: 500px;">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" data-src="holder.js/375x500/auto" alt="Conquering the Pfeifferhorn" src="img/2014%20winter%20Andrew%20eyes%20Pfeifferhorn.jpg" data-holder-rendered="true" style="width: 375px; height: 500px;">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">The funny thing about <span class="text-muted">getting on the court.</span></h2>
+          <p class="lead">Trying to change healthcare ended up changing me. Some lessons were empowering, some were disheartening, but all of them taught me about vision, value, execution, team-building, and the messiness that happens where they all meet.</p>
+            
+                                  <p><a class="btn btn-attgrab" href="https://medium.com/@andrewpagels" role="button" target="_blank">See musings from my journey &raquo;</a></p>
+            
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">The future is created <span class="text-muted">by those who care enough to create it.</span></h2>
+            <p class="lead">I came into the University not knowing more than a modicum about what I wanted to do, and how I could add value to the world.</p>
+
+<p class="lead">I leave, this Spring, with a clear picture of my own vector of impact, feeling empowered and confident. I have learned not a set of facts in my time here, but a mindset - a way of seeing the world as something that is constantly being edited, changed, improved by the people who care to do it. <b>Now, I feel that I can be one of those people.</b></p>
+            
+<p class="lead">It's a start, at least.</p>
+     
+        <p><a class="btn btn-attgrab" href="problem.html" role="button">See how setting out on this journey changed my life &raquo;</a></p>
+            
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" data-src="holder.js/500x350/auto" alt="Grand Teton and Tapioca Pudding" src="img/2012%20summer%20Andrew%20and%20Andy%20Grand%20Teton%20summit.JPG" data-holder-rendered="true">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      </div>
+        </section>
+      <!-- /END THE FEATURETTES -->
+
+<!-- I couldn't figure out how to center the footer without using inline styling. Is this not kosher? -->
+      <footer>
+        <p style="text-align: center">&copy; Playhouse Records 2014. Built with Bootstrap. Thanks to Xon for expert punditry.</p> 
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+      
+      
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    
+    <!-- To make slide transitions -->
+      
+      <script>
+jQuery(document).ready(function(){
+	// 'catTopPosition' is the amount of pixels #cat
+	// is from the top of the document
+	var catTopPosition = jQuery('.slide').offset().top;
+	
+	// When #scroll is clicked
+	jQuery('.slidedelay').click(function(){
+		// Scroll down to 'catTopPosition'
+		jQuery('html, body').animate({scrollTop:catTopPosition}, 'slow');
+		// Stop the link from acting like a normal anchor link
+		return false;
+	});
+});
+      </script>  
+    
+  </body>
+</html>

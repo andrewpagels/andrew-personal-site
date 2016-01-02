@@ -1,0 +1,44 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.btn-attgrab {
+    display: inline-block;
+    padding: 30px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 15px;
+}
+
+.btn-attgrab {
+    color: #81BEF7;
+    background-color: #fff;
+    border-color: #ccc;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+}
+.btn-attgrab:hover, .btn-attgrab:focus, .btn-attgrab.focus, .btn-attgrab:active, .btn-attgrab.active, .open>.dropdown-toggle.btn-attgrab {
+    color: #81BEF7;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+#profile 		{ font-size:1.15em; line-height:1.6em; font-weight:400; }
+.brief-about 		{ font-weight:500; font-size:1.3em; border-top:1px solid #d6d6d6; padding-top:50px; padding-bottom:50px;width:100%; float:left;}
